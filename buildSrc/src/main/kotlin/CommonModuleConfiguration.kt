@@ -21,13 +21,6 @@ fun BaseExtension.configureCommon() {
     buildFeatures.compose = true
     composeOptions.kotlinCompilerExtensionVersion = Versions.AndroidX.compose
 
-    flavorDimensions("default")
-    productFlavors {
-        create("dev") {
-            resourceConfigurations.addAll(listOf("en", "xxhdpi"))
-        }
-    }
-
     compileOptions.apply {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
